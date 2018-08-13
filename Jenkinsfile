@@ -1,5 +1,9 @@
 node {
   
+  stage('Configure') {
+    env.PATH = "${tool 'maven 3'}/bin:${env.PATH}"
+  }
+  
   stage('Checkout') {
     git 'https://github.com/AugustoPeralta/spring-boot.git'
   }
