@@ -1,7 +1,7 @@
 node {
   
   stage('Configure') {
-    env.PATH = "${tool 'maven 3'}/bin:${env.PATH}"
+    env.PATH = "${tool 'maven'}/bin:${env.PATH}"
   }
   
   stage('Checkout') {
